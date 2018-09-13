@@ -1,8 +1,9 @@
 #pragma once
 #ifndef TASK_H
 #define TASK_H
-#include<string>
-#include<vector>
+#include <string>
+#include <vector>
+#include <memory>
 
 using namespace std;
 
