@@ -1,9 +1,10 @@
 #pragma once
 #ifndef RACHINE_H
 #define RACHINE_H
-#include<string>
-#include<memory>
-#include"machine.h"
+#include <vector>
+#include <memory>
+
+#include  "machine.h"
 
 using namespace std;
 
@@ -25,12 +26,12 @@ public:
 	int m_used;
 	int pm_used;
 	int load_num;
-	vector< vector<Instance> > load_instance;
+	vector<vector<Instance>> load_instance;
 	vector<Load_Task> load_task;
 
 	Rachine();
 	Rachine(string &Rachine_id, float &Cpu, float &Mem, int &Disk, float &Cpu_used, float &Mem_used, int &Disk_used, int &P, int &M, 
-		int &Pm, int &P_used, int &M_used, int &Pm_used, int &Load_num, vector< vector<Instance> > &Load_instance,
+		int &Pm, int &P_used, int &M_used, int &Pm_used, int &Load_num, vector<vector<Instance>> &Load_instance,
 		vector<Load_Task> &Load_task);
 	~Rachine();
 };

@@ -3,6 +3,7 @@
 #include <sstream>
 #include <regex>
 #include "fileUtil.h"
+#include "instance.h"
 
 int read_machine(vector< shared_ptr<Machine> > &Machine_list, string name) {//对于字符串拼接，string可使用重载“+”，而char可使用C风格的stract（）函数
 	ifstream inFile("data/machine_resources." + name + ".csv", ios::in); // 打开模式可省略vector< shared_ptr<Machine> >
@@ -203,7 +204,7 @@ int read_instance(vector< shared_ptr<Instance> > &Instance_list, vector< shared_
 		Instance_list.push_back(instance);//构造Instance对象
 		bool flag_load = false;
 		for (int num = 0; num < ((*Rachine_list[rachine_num - 1]).load_instance).size(); num++) {//指针的嵌套关系十分复杂
-			if ((((((*Rachine_list[rachine_num - 1]).load_instance)[num])[0]).refer_app) == Refer_app) {
+			if (((((*Rachine_list[rachine_num - 1]).load_instance)[num])[0]).refer_app == Refer_app) {
 			
 			};
 		};

@@ -1,10 +1,13 @@
 #pragma once
 #ifndef INSTANCE_H
 #define INSTANCE_H
-#include"app.h"
+
+#include <string>
+#include <memory>
 
 using namespace std;
 
+class App;
 class Rachine;//超前引用，防止相互引用头文件造成编译错误
 
 class Instance {

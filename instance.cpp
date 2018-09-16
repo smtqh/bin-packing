@@ -1,5 +1,6 @@
-#include"instance.h"
-#include"rachine.h"
+#include "instance.h"
+#include "rachine.h"
+#include "app.h"
 
 Instance::Instance() {
 

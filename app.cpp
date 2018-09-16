@@ -1,4 +1,5 @@
-#include"app.h"
+#include "app.h"
+#include <memory>
 
 //using命令：using std::cout;这样更加安全
 App::App() {
