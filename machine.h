@@ -21,7 +21,7 @@ struct Load_Task {
 };
 
 class Machine {
-private:
+public:
 	string machine_id;
 	float cpu[1470];
 	float mem[1470];
@@ -38,7 +38,7 @@ private:
 	int load_num;
 	shared_ptr<Load_App> load_app;
 	shared_ptr<Load_Task> load_task;
-public:
+	
 	Machine();
 	Machine(string &Machine_id, float &Cpu, float &Mem, int &Disk, float &Cpu_used, float &Mem_used, int &Disk_used, 
 		int &P, int &M, int &Pm, int &P_used, int &M_used, int &Pm_used, int &Load_num, shared_ptr<Load_App> &Load_app, shared_ptr<Load_Task> &Load_task);

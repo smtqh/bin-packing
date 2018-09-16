@@ -6,12 +6,12 @@ App::App() {
 };
 
 App::App(string &App_id, float(&Cpu)[98], float(&Mem)[98], int &Disk, int &P, int &M, int &Pm, int &Inst_num,
-	int &Inst_used, int &Priority, int &Transfer_flag, tuple< shared_ptr<App>, int > &App_inter) {
-	std::make_shared< tuple<App, int> >();
+	int &Inst_used, int &Priority, int &Transfer_flag, vector< tuple< App, int > > &App_inter) {
+	std::make_shared< vector< tuple< App, int > > >();
 	this->app_id = App_id;
-	for (int num = 0; num < 1470; num++) {
-		this->cpu[num] = Cpu[num / 15];
-		this->mem[num] = Mem[num / 15];
+	for (int num = 0; num < 98; num++) {
+		this->cpu[num] = Cpu[num];
+		this->mem[num] = Mem[num];
 	};
 	this->disk = Disk;
 	this->p = P;
